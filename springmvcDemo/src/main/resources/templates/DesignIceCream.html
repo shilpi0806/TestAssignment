@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<img th:src= "@{/images/Ice-Cream-Parlours.jpg}" ></div><br>
+<h4>Please customize your dessert</h4>
+<form method="post" th:object="${iceCreams}">
+<table>
+<tbody>
+<tr>
+<td>Flavours:</td>
+					<td>
+						<ul>
+							<li th:each="ingredients:${flavours}">
+								<input type="checkbox" name="ingredients" th:value="${ingredients.ingredient_id}"><span th:text="${ingredients.ingredient_name}"></span>
+							</li>
+						</ul>
+					</td>
+
+</tr>
+
+<tr>
+<td>Cone:</td>
+					<td>
+						<ul>
+							<li th:each="ingredients:${cone}">
+								<input type="checkbox" name="ingredients" th:value="${ingredients.ingredient_id}"><span th:text="${ingredients.ingredient_name}"></span>
+							</li>
+						</ul>
+					</td>
+
+</tr>
+
+<tr>
+<td>Syrup:</td>
+					<td>
+						<ul>
+							<li th:each="ingredients:${syrup}">
+								<input type="checkbox" name="ingredients" th:value="${ingredients.ingredient_id}"><span th:text="${ingredients.ingredient_name}"></span>
+							</li>
+						</ul>
+					</td>
+
+</tr>
+<tr>
+<td>Enter Your Name :</td>
+					<td>
+						<input type="text" th:field ="*{cust_name}" >
+					</td>
+</tr>
+<br><br>
+<tr>
+					<td colspan="2"><input type="submit" value="Submit your Dessert"></td>
+				</tr>
+</tbody>
+
+</table>
+
+</form>
+</body>
+</html>

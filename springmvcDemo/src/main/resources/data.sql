@@ -1,0 +1,11 @@
+insert into Ingredients values(1,'Belgium','Flavour');
+insert into Ingredients values(2,'Choco - Chips','Flavour');
+insert into Ingredients values(3,'Butter Scotch','Flavour');
+insert into Ingredients values(4,'Choco Brownie','Flavour');
+insert into Ingredients values(5,'Kesar Pista','Flavour');
+insert into Ingredients values(6,'Fruit Sundae','Flavour');
+insert into Ingredients values(7,'Classic','Cone');
+insert into Ingredients values(8,'Chocolate','Cone');
+insert into Ingredients values(9,'Stawberry','Syrup');
+insert into Ingredients values(10,'Vanilla','Syrup');
+insert into Ingredients values(11,'Hot chocolate','Syrup');
